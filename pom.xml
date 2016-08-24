@@ -87,6 +87,26 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.15</version>
             </plugin>
+             <plugin>
+ <groupId>org.jboss.as.plugins</groupId>
+ <artifactId>jboss-as-maven-plugin</artifactId>
+ <version>7.1.0.Final</version>
+ <executions>
+ <execution>
+ <phase>install</phase>
+ <goals>
+ <goal>deploy</goal>
+ </goals>
+ <configuration>
+ <hostname>192.168.179.1</hostname>
+ <port>9990</port>
+ <username>ash</username>
+ <password>aa</password>
+ </configuration>
+ </execution>
+ </executions>
+ </plugin>
+
         </plugins>
     </reporting>
 </project>
